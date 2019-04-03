@@ -18,6 +18,10 @@ jobs:
           command: "cmake -H. -Bbuild"
 
       - run:
+          name: CMake version
+          command: "cmake --version"
+
+      - run:
           name: Creating librariries
           command: "cmake --build build --target type"
 
