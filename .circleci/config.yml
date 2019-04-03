@@ -29,13 +29,9 @@ jobs:
           command: "cmake -H. -Bbuild"
 
       - run:
-          name: Creating librariries
-          command: "cmake --build build --target type"
-
-      - run:
           name: Creating test binary
-          command: "cmake --build build --target test"
+          command: "cmake --build build --target test_binary"
 
       - run:
           name: Testing project
-          command: "./bin/test"
+          command: "./bin/test_binary"
