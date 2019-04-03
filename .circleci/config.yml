@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: "ubuntu:18.04"
 
-        environement:
+      - environement:
           CXX: /usr/bin/g++-8
           CC: /usr/bin/gcc-8
 
