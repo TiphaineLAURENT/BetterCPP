@@ -3,7 +3,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "debian:stretch"
+      - image: "gcc:8.3"
+#      - image: "debian:stretch"
 
     steps:
       - checkout
@@ -14,7 +15,7 @@ jobs:
 
       - run:
           name: Installing gcc/g++
-          command: "apt-get update && apt-get install -y gcc g++"
+          command: "apt-get update && apt-get install -y gcc g++-8"
 
       - run:
           name: Installing CMAKE
