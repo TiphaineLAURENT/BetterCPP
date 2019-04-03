@@ -14,12 +14,12 @@ jobs:
           command: "apt-get update && apt-get install -y cmake"
 
       - run:
-          name: Creating build files
-          command: "cmake -H. -Bbuild"
-
-      - run:
           name: CMake version
           command: "cmake --version"
+
+      - run:
+          name: Creating build files
+          command: "cmake -H. -Bbuild"
 
       - run:
           name: Creating librariries
