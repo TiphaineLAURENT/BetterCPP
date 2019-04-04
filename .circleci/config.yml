@@ -6,6 +6,7 @@ jobs:
       - image: "ubuntu:18.04"
 
         environment:
+          CODECOV_TOKEN: c8170a12-9a7b-4897-b02c-b70c8934c957
           CXX: /usr/bin/g++-8
           CC: /usr/bin/gcc-8
 
