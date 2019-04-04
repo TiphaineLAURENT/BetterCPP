@@ -8,7 +8,7 @@ set(LIB_TYPE_SOURCES
         src/type/Value/Value.hpp src/type/Value/Value.cpp
         src/type/type.hpp
         )
-add_library(type ${LIB_TYPE_SOURCES})
+add_library(type SHARED ${LIB_TYPE_SOURCES})
 set_target_properties(type PROPERTIES LINKER_LANGUAGE CXX)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
