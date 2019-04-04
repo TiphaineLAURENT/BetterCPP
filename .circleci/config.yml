@@ -30,4 +30,4 @@ jobs:
 
       - run:
           name: Testing project
-          command: "./bin/test_binary"
+          command: "./bin/test_binary --success"
